@@ -10,12 +10,15 @@ public class Task3 {
         int a = scr.nextInt();
         int b = scr.nextInt();
 
-        int val = a;
-        while (val < b) {
-            if ((val%5 == 0) && (val%10 != 0)) {
-                System.out.print(val + " ");
+        if (a >= b) {
+            System.out.println("Ошибка ввода. Первое число должно быть меньше второго.");
+        } else {
+            while (a < b) {
+                if ((a % 5 == 0) && (a % 10 != 0)) {
+                    System.out.print(a + " ");
+                }
+                a++;
             }
-            val++;
         }
     }
 }

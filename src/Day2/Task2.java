@@ -10,10 +10,13 @@ public class Task2 {
         int a = scr.nextInt();
         int b = scr.nextInt();
 
-
-        for (int i = a; i < b; i++){
-            if ((i%5 == 0) && (i%10 != 0)) {
-                System.out.print(i + " ");
+        if (a >= b) {
+            System.out.println("Ошибка ввода. Первое число должно быть меньше второго.");
+        } else {
+            for (int i = a; i < b; i++) {
+                if ((i % 5 == 0) && (i % 10 != 0)) {
+                    System.out.print(i + " ");
+                }
             }
         }
     }

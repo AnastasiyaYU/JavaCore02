@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
         System.out.println("Введите два положительных числа:");
-
+//commit two
         Scanner scr = new Scanner(System.in);
         int a = scr.nextInt();
         int b = scr.nextInt();
